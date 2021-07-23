@@ -56,6 +56,8 @@ if(isset($_POST["submit"])){
                 $_SESSION["loggedin"] = true ;
                 $_SESSION["email"] = $email ;
                 $_SESSION["password"] = $password;
+                $_SESSION["firstname"] = $firstname;  
+                $_SESSION["lastname"] = $lastname;
                 $_SESSION["user_id"] = $id;
 
                 header('location:index.php');
