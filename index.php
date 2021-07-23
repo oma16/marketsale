@@ -8,7 +8,7 @@ if(isset($_SESSION['loggedin']) && $_SESSION['loggedin']== true){
     echo "welcome ". $_SESSION['firstname']."<br>";
     
 }else{
-    header('location:login.php');
+    header('location:index.php');
 }
 $query = "SELECT * FROM users WHERE user_id=" .$_SESSION['user_id'];
 
