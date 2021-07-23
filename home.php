@@ -3,7 +3,13 @@ session_start();
 require_once('mysql-connect.php');
 require_once('header.php'); 
 
-
+if(isset($_SESSION['loggedin']) && $_SESSION['loggedin']== true){
+    echo "welcome ". $_SESSION['email']."<br>";
+    echo "welcome ". $_SESSION['firstname']."<br>";
+    
+}else{
+    header('location:index.php');
+}
 $query = "SELECT * FROM users WHERE user_id=" .$_SESSION['user_id'];
 
 

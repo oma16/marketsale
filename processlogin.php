@@ -60,7 +60,7 @@ if(isset($_POST["submit"])){
                 $_SESSION["lastname"] = $lastname;
                 $_SESSION["user_id"] = $id;
 
-                header('location:index.php');
+                header('location:home.php');
                 exit();
 
               }
